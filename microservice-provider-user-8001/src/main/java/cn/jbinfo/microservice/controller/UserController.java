@@ -44,11 +44,6 @@ public class UserController
 	@RequestMapping(value = "/user/discovery", method = RequestMethod.GET)
     public Object discovery()
     {
-        System.out.println("---------------------");
-        System.out.println("---------------------");
-        System.out.println("---------------------");
-        System.out.println("---------------------");
-        System.out.println("=====================");
         List<String> list = client.getServices();
         List<ServiceInstance> srvList = client.getInstances("MICROSERVICE-USER");
         for (ServiceInstance element : srvList) {
