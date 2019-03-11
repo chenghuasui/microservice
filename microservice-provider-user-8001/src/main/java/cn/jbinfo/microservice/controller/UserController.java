@@ -44,8 +44,6 @@ public class UserController
     public Object discovery()
     {
         List<String> list = client.getServices();
-        System.out.println("**********" + list);
-
         List<ServiceInstance> srvList = client.getInstances("MICROSERVICE-USER");
         for (ServiceInstance element : srvList) {
             System.out.println(element.getServiceId() + "\t" + element.getHost() + "\t" + element.getPort() + "\t"
