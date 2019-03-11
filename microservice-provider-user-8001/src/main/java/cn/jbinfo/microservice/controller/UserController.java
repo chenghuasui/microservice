@@ -48,6 +48,7 @@ public class UserController
         System.out.println("---------------------");
         System.out.println("---------------------");
         System.out.println("---------------------");
+        System.out.println("=====================");
         List<String> list = client.getServices();
         List<ServiceInstance> srvList = client.getInstances("MICROSERVICE-USER");
         for (ServiceInstance element : srvList) {
