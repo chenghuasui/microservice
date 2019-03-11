@@ -40,7 +40,8 @@ public class UserController
     }
 
 
-    @RequestMapping(value = "/user/discovery", method = RequestMethod.GET)
+    @SuppressWarnings("unused")
+	@RequestMapping(value = "/user/discovery", method = RequestMethod.GET)
     public Object discovery()
     {
         List<String> list = client.getServices();
