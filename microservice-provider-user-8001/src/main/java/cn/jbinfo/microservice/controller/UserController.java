@@ -44,7 +44,7 @@ public class UserController
 	@RequestMapping(value = "/user/discovery", method = RequestMethod.GET)
     public Object discovery()
     {
-        List<String> list = client.getServices();
+        List<String> list = client.getServices();;
         List<ServiceInstance> srvList = client.getInstances("MICROSERVICE-USER");
         for (ServiceInstance element : srvList) {
             System.out.println(element.getServiceId() + "\t" + element.getHost() + "\t" + element.getPort() + "\t"
