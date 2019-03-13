@@ -8,7 +8,7 @@
 		select * from user where id=#{id};
 	</select>
 	<select id="findAll" resultType="User">
-		select id,del_flag,user_account,user_name from user;
+		select * from user;
 	</select>
 	<insert id="addUser" parameterType="User">
 		INSERT INTO user(id,db_source) VALUES(#{id},DATABASE());
