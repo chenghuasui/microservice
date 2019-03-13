@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 public class UserController_Consumer {
 
-    private static final String prefix="http://localhost:8001";
+    private static final String prefix="MICROSERVICE-USER";
 
     @Autowired
     private RestTemplate restTemplate;
