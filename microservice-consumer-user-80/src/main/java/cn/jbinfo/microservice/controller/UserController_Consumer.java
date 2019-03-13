@@ -3,6 +3,7 @@ package cn.jbinfo.microservice.controller;
 
 import cn.jbinfo.microservice.biz.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,9 +13,10 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @RestController
+@EnableEurekaClient
 public class UserController_Consumer {
 
-    private static final String prefix="MICROSERVICE-USER";
+    private static final String prefix="http://MICROSERVICE-USER";
 
     @Autowired
     private RestTemplate restTemplate;
@@ -35,6 +37,7 @@ public class UserController_Consumer {
     @RequestMapping(value = "/consumer/user/list")
     public List<User> list()
     {
+
         return restTemplate.getForObject(prefix + "/user/list", List.class);
     }
 
