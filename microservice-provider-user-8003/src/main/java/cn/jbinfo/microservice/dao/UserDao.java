@@ -1,6 +1,6 @@
 package cn.jbinfo.microservice.dao;
 
-import cn.jbinfo.microservice.biz.User;
+import cn.jbinfo.microservice.biz.user.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package cn.jbinfo.microservice.service.impl;
 
 
-import cn.jbinfo.microservice.biz.User;
+import cn.jbinfo.microservice.biz.user.domain.User;
 import cn.jbinfo.microservice.dao.UserDao;
 import cn.jbinfo.microservice.service.UserService;
 import org.omg.PortableInterceptor.USER_EXCEPTION;

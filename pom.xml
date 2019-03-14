@@ -17,6 +17,7 @@
         <module>microservice-eureka-7003</module>
         <module>microservice-provider-user-8002</module>
         <module>microservice-provider-user-8003</module>
+        <module>microservice-consumer-user-feign</module>
     </modules>
 
     <properties>

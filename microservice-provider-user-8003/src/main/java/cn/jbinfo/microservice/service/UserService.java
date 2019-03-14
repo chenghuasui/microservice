@@ -1,9 +1,10 @@
 package cn.jbinfo.microservice.service;
 
 
+import cn.jbinfo.microservice.biz.user.domain.User;
+
 import java.util.List;
 
-import cn.jbinfo.microservice.biz.User;
 
 public interface UserService
 {

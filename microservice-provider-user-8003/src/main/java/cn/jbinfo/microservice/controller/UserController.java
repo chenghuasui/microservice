@@ -1,6 +1,6 @@
 package cn.jbinfo.microservice.controller;
 
-import cn.jbinfo.microservice.biz.User;
+import cn.jbinfo.microservice.biz.user.domain.User;
 import cn.jbinfo.microservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
